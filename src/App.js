@@ -60,6 +60,7 @@ class App extends Component {
 
     channel = pusher.subscribe("btcusd");     
     this.subscribe();
+    this.setState({rows: []});
     this.setState({symbol: "btcusd"});
     console.log('subscribe btcusd');
   }
@@ -70,6 +71,7 @@ class App extends Component {
 
     channel = pusher.subscribe("ethusd");     
     this.subscribe();
+    this.setState({rows: []});
     this.setState({symbol: "ethusd"});
     console.log('subscribe ethusd');
   }   
